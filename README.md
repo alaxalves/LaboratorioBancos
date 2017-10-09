@@ -20,7 +20,7 @@ Em termos de consultas e relatórios, o sistema deverá contemplar:
 
 ### Sumário
 1. [Introdução]()
-1. [O Minimundo]()	
+1. [O Minimundo]()
 1. [Dicionário de Dados - DER]()
 1. [O Diagrama Entidade Relacionamento]()
 1. [Dicionário de Dados]()
@@ -35,43 +35,40 @@ Neste documento serão descritos os dados referentes ao mini-mundo ‘sistema ci
 
 Hollywood possui diversos estúdios cinematográficos, cada um caracterizado por um nome único, um dono, data de fundação, e o faturamento do ano anterior. Estes estúdios produzem filmes que possui um nome único, o número de meses que levou sendo feito, o ano de lançamento, o número do "copyright", e o custo total do filme.
 
-Em cada filme atuam atores, que possuem um nome artístico único, um número de seguro social (também único), uma nacionalidade, idade, sexo, e um conjunto de tipos de papéis para o qual seu tipo físico é aconselhável (ex: vó, mocinha jovem, galã com idades avançadas, adolescentes). 
+Em cada filme atuam atores, que possuem um nome artístico único, um número de seguro social (também único), uma nacionalidade, idade, sexo, e um conjunto de tipos de papéis para o qual seu tipo físico é aconselhável (ex: vó, mocinha jovem, galã com idades avançadas, adolescentes).
 
-Estes tipos de papéis não são pré-definidos, constituindo uma lista preenchida a critério de cada ator. 
+Estes tipos de papéis não são pré-definidos, constituindo uma lista preenchida a critério de cada ator.
 
-Em cada filme onde atua, um ator ganha um cachê, e desempenha um personagem que possui um nome. 
+Em cada filme onde atua, um ator ganha um cachê, e desempenha um personagem que possui um nome.
 
-Estúdios podem existir mesmo que ainda não tiverem produzido um filme, mas só são considerados atores que já atuaram em pelo menos um filme. 
+Estúdios podem existir mesmo que ainda não tiverem produzido um filme, mas só são considerados atores que já atuaram em pelo menos um filme.
 
-Todos os filmes possuem pelo menos um diretor. 
+Todos os filmes possuem pelo menos um diretor.
 
-Em termos de consultas e relatórios, o sistema deverá contemplar: 
-- Relação dos filmes produzidos por um estúdio; 
-- Relação dos atores e diretores dos filmes; 
-- Relação dos cachês de um determinado ator; 
+Em termos de consultas e relatórios, o sistema deverá contemplar:
+- Relação dos filmes produzidos por um estúdio;
+- Relação dos atores e diretores dos filmes;
+- Relação dos cachês de um determinado ator;
 - Relação de todos os personagens de um ator.
 
 ### Dicionário de Dados - DER
 #### O Diagrama Entidade Relacionamento
 
-![alt text]()
-
+![hollywood.png](/assets/images/hollywood.png)
 
 #### Dicionário de Dados
 
 ### Dicionário de Dados - MER
 #### O Modelo Entidade Relacionamento
 
-![alt text]()
+![estudio_cinematografico_logico.png](/assets/images/estudio_cinematografico_logico.png)
 
 #### Dicionário de Dados
 
-
-
 # Requisitos
 
-### Sumário 
-1. [Introdução]()	
+### Sumário
+1. [Introdução]()
 1. [O Minimundo]()
 1. [Requisitos Identificados]()
 
@@ -82,15 +79,15 @@ Neste documento serão listados os requisitos referentes ao mini-mundo ‘sistem
 
 Hollywood possui diversos estúdios cinematográficos, cada um caracterizado por um nome único, um dono, data de fundação, e o faturamento do ano anterior.
 Estes estúdios produzem filmes que possui um nome único, o número de meses que levou sendo feito, o ano de lançamento, o número do "copyright", e o custo total do filme.
-Em cada filme atuam atores, que possuem um nome artístico único, um número de seguro social (também único), uma nacionalidade, idade, sexo, e um conjunto de tipos de papéis para o qual seu tipo físico é aconselhável (ex: vó, mocinha jovem, galã com idades avançadas, adolescentes). 
-Estes tipos de papéis não são pré-definidos, constituindo uma lista preenchida a critério de cada ator. 
-Em cada filme onde atua, um ator ganha um cachê, e desempenha um personagem que possui um nome. 
-Estúdios podem existir mesmo que ainda não tiverem produzido um filme, mas só são considerados atores que já atuaram em pelo menos um filme. 
-Todos os filmes possuem pelo menos um diretor. Em termos de consultas e relatórios, o sistema deverá contemplar: 
+Em cada filme atuam atores, que possuem um nome artístico único, um número de seguro social (também único), uma nacionalidade, idade, sexo, e um conjunto de tipos de papéis para o qual seu tipo físico é aconselhável (ex: vó, mocinha jovem, galã com idades avançadas, adolescentes).
+Estes tipos de papéis não são pré-definidos, constituindo uma lista preenchida a critério de cada ator.
+Em cada filme onde atua, um ator ganha um cachê, e desempenha um personagem que possui um nome.
+Estúdios podem existir mesmo que ainda não tiverem produzido um filme, mas só são considerados atores que já atuaram em pelo menos um filme.
+Todos os filmes possuem pelo menos um diretor. Em termos de consultas e relatórios, o sistema deverá contemplar:
 
-- Relação dos filmes produzidos por um estúdio; 
-- Relação dos atores e diretores dos filmes; 
-- Relação dos cachês de um determinado ator; 
+- Relação dos filmes produzidos por um estúdio;
+- Relação dos atores e diretores dos filmes;
+- Relação dos cachês de um determinado ator;
 - Relação de todos os personagens de um ator.
 
 ### Requisitos Identificados
@@ -107,5 +104,3 @@ Outros requisitos, mas tão importantes quanto os anteriores, identificados para
 
 - Atribuição de tabelas como estado civil, sexo, endereço, telefone, nacionalidade, etc. para Ator, Diretor, e para demais entidades nos quais sejam necessárias.
 - Diversas dependências entre tabelas para inclusão de dados. Ex.: Um filme só pode ser criado se possuir pelo menos um diretor, um ator e um estúdio cinematográfico.
-
-
