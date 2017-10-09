@@ -58,12 +58,92 @@ Em termos de consultas e relatórios, o sistema deverá contemplar:
 
 #### Dicionário de Dados
 
+Dicionário de Dados
+
+| **NOME** | **TIPO** | **DESCRIÇÃO** |
+| --- | --- | --- |
+| EstadoCivil | entidade | entidade que define e representa o estado civil de alguém. |
+| DonoEstudio | entidade | entidade que define e representa um dono de estúdio. |
+| Diretor | entidade | entidade que define e representa um diretor e seus atributos. |
+| Sexo | entidade | entidade que define sexo. |
+| Ator | entidade | entidade que define e representa dados de um ator. |
+| Papel | entidade | entidade que define e representa dados |
+| Telefone | entidade | entidade que define e representa dados referentes à telefone. |
+| FilmeDiretor | entidade | entidade que define e representa dados da tabela gerada pelo relacionamento entre filme e diretor. |
+| AtorPapel | entidade | entidade que define e representa dados provenientes da relação entre as entidades ator e papel. |
+| Personagem | entidade | entidade que define e representa dados da entidade que define personagem. |
+| Estudio | entidade | entidade que define e representa dados de um estúdio. |
+| ContratoAtorFilme | entidade | entidade que define e representa dados provenientes da relação entre ator e filme. |
+| Filme | entidade | entidade que define e representa dados de um determinado filme. |
+| Endereço | entidade | entidade que define e representa dados compilados de TipoEndereco, Rua, Bairro, Cidade, UF e País. |
+| TipoTelefone | entidade | entidade que define e representa dados de tipos de telefone. |
+| País | entidade | entidade que define e representa dados de um país. |
+| UF | entidade | entidade que define e representa dados de uma unidade federativa pertencente à um país. |
+| Cidade | entidade | entidade que define e representa dados de uma cidade pertencente à uma unidade federativa. |
+| Bairro | entidade | entidade que define e representa dados referentes à um bairro pertencente a uma cidade. |
+| Rua | entidade | entidade que define e representa dados de uma rua pertencente à uma cidade. |
+| TipoEndereço | entidade | entidade que define e representa dados para  diferenciar tipos de endereço. |
+| EstadoCivil\_Dono | relacionamento | relacionamento entre entidades EstadoCivil(1) e DonoEstudio(n). |
+| EstadoCivil\_Diretor | relacionamento | relacionamento entre entidades EstadoCivil(1) e Diretor(n). |
+| EstadoCivil\_Ator | relacionamento | relacionamento entre entidades EstadoCivil(1) e Ator(n). |
+| Sexo\_Diretor | relacionamento | relacionamento entre entidades Sexol(1) e DIretor(n). |
+| Sexo\_Ator | relacionamento | relacionamento entre entidades Sexol(1) e Ator(n). |
+| Sexo\_Dono | relacionamento | relacionamento entre entidades Sexol(1) e DonoEstúdio(n). |
+| Sexo\_Perso | relacionamento | relacionamento entre entidades Sexol(1) e Personagem(n). |
+| Papel\_Ator | relacionamento | relacionamento entre entidades Papel(1) e AtorPapel(n). |
+| Ator\_Papel | relacionamento | relacionamento entre entidades Ator(1) e AtorPapel(n). |
+| Ator\_Contrato | relacionamento | relacionamento entre entidades Ator(1) e ContratoFilme(n). |
+| Filme\_Contrato | relacionamento | relacionamento entre entidades Filme(1) e ContratoFilme(n). |
+| Contrato\_Perso | relacionamento | relacionamento entre entidades ContratoFilme(1) e Personagem(n). |
+| Dono\_Estúdio | relacionamento | relacionamento entre entidades DonoEstúdio(1) e Estúdio(n). |
+| Estud\_FIlme | relacionamento | relacionamento entre entidades Estúdio(1) e Filme(n). |
+| Filme\_FIlmeDiretor | relacionamento | relacionamento entre entidades Filme(1) e FilmeDiretor(n). |
+| DIretor\_FilmeDiretor | relacionamento | relacionamento entre entidades Diretor(1) e FilmeDiretor(n). |
+| Ator\_Endereço | relacionamento | relacionamento entre entidades Ator(1) e Endereço(n). |
+| Estud\_Endereço | relacionamento | relacionamento entre entidades Estúdio(1) e Endereço(n). |
+| Diretor\_Endereço | relacionamento | relacionamento entre entidades Diretor(1) e Endereço(n). |
+| Dono\_Endereço | relacionamento | relacionamento entre entidades Dono(1) e Endereço(n). |
+| Tipo\_Endereço | relacionamento | relacionamento entre entidades TipoEndereço(1) e Endereço(n). |
+| Rua\_Endereço | relacionamento | relacionamento entre entidades Rua(1) e Endereço(n). |
+| Bairro\_Rua | relacionamento | relacionamento entre entidades Bairro(1) e Rua(n). |
+| Cidade\_Bairro | relacionamento | relacionamento entre entidades Cidade(1) e Bairro(n). |
+| UF\_Cidade | relacionamento | relacionamento entre entidades UF(1) e Cidade(n). |
+| País\_UF | relacionamento | relacionamento entre entidades País(1) e UF(n). |
+| Ator\_Telefone | relacionamento | relacionamento entre entidades Ator(1) e Telefone(n). |
+| Estud\_Telefone | relacionamento | relacionamento entre entidades Estúdio(1) e Telefone(n). |
+| Diretor\_Telefone | relacionamento | relacionamento entre entidades Diretor(1) e Telefone(n). |
+| Dono\_Telefone | relacionamento | relacionamento entre entidades Dono(1) e Telefone(n). |
+
 ### Dicionário de Dados - MER
 #### O Modelo Entidade Relacionamento
 
 ![estudio_cinematografico_logico.png](/assets/images/estudio_cinematografico_logico.png)
 
 #### Dicionário de Dados
+
+| **NOME** | **TIPO** | **DESCRIÇÃO** |
+| --- | --- | --- |
+| Filme | Tabela | Tabela modelo para dados relacionados à um filme. |
+| id\_filme | atributo | PK da tabela filme, tipo inteiro, identificador próprio para a tabela. |
+| nome\_filme | atributo | PK da tabela filme, tipo VARCHAR(45),  funciona como PK pois o nome do filme é único. |
+| copyright\_filme | atributo | PK da tabela filme, tipo LONG,  funciona como PK pois o copyright de cada filme é único. |
+| qtd\_meses\_producao | atributo | Atributo próprio da tabela Filme, de tipo INT,  armazena a quantidade de meses que o filme demorou a ser produzido. |
+| ano\_lancamento | atributo | Atributo próprio da tabela Filme, de tipo YEAR, armazena o ano de lançamento do filme. |
+| custo\_total\_producao | atributo | Atributo próprio da tabela Filme, de tipo FLOAT, armazena o valor total da produção do filme. |
+| Estudio\_id\_estudio | atributo | FK da tabela Filme, referência a tabela Estudio a partir do valor do id de um determinado estúdio já instanciado. Não pode ser nulo. |
+| Estudio\_nome\_estudio | atributo | FK da tabela Filme, referência a tabela Estudio a partir do valor do nome único de um determinado estúdio já instanciado. Não pode ser nulo. |
+| Estudio\_DonoEstudio\_id\_dono\_estudo | atributo | FK da tabela Filme, referência a tabela DonoEstudio a partir do valor do id de um determinado dono de estúdio já instanciado. Não pode ser nulo. |
+| Ator | Tabela | Tabela modelo para dados relacionados à um ator. OBS.: Os campos de endereço ficam na tabela endereço. |
+| id\_ator | atributo | PK da tabela ator, tipo inteiro, identificador próprio para a tabela. |
+| cpf\_ator | atributo | PK da tabela ator, tipo inteiro, identifica ator pelo número de cpf. |
+| nome\_artistico\_ator | atributo | PK da tabela filme, tipo VARCHAR(45), identificador próprio para a tabela por conta do nome artístico ser único. |
+| seguro\_social\_ator | atributo | PK da tabela filme, tipo LONG, identifica ator pelo seu número único de seguro social. |
+| data\_nascimento\_ator | atributo | Atributo próprio da tabela Ator, de tipo DATE, armazena a data de nascimento do ator. |
+| Sexo\_sexo | atributo | FK da tabela Ator, referência a tabela Sexo a partir do valor booleano que define sexo. Não pode ser nulo. |
+| EstadoCivil\_id\_estado\_civil | atributo | FK da tabela Ator, referência a tabela EstadoCivil a partir do valor do identificador de um determinado estado civil já instanciado. Não pode ser nulo. |
+| Cidade\_id\_cidade | atributo | FK da tabela Ator, referência a tabela Cidade a partir do valor do identificador único de uma determinada cidade já instanciada. Chave que descreve a naturalidade do ator. Não pode ser nulo. |
+| Cidade\_UF\_id\_uf | atributo | FK da tabela Ator, referência a tabela UF a partir do valor do identificador único de uma determinadaunidade federativa já instanciada. Chave que descreve a naturalidade do ator. Não pode ser nulo. |
+| Cidade\_UF\_Pais\_id\_pais | atributo | FK da tabela Ator, referência a tabela País a partir do valor do identificador único de uma determinada cidade já instanciada. Chave que descreve a naturalidade do ator. Não pode ser nulo. |
 
 # Requisitos
 
