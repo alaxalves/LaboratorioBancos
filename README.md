@@ -121,7 +121,29 @@ Dicionário de Dados
 
 #### Dicionário de Dados
 
-
+| **NOME** | **TIPO** | **DESCRIÇÃO** |
+| --- | --- | --- |
+| Filme | Tabela | Tabela modelo para dados relacionados à um filme. |
+| id\_filme | atributo | PK da tabela filme, tipo inteiro, identificador próprio para a tabela. |
+| nome\_filme | atributo | PK da tabela filme, tipo VARCHAR(45),  funciona como PK pois o nome do filme é único. |
+| copyright\_filme | atributo | PK da tabela filme, tipo LONG,  funciona como PK pois o copyright de cada filme é único. |
+| qtd\_meses\_producao | atributo | Atributo próprio da tabela Filme, de tipo INT,  armazena a quantidade de meses que o filme demorou a ser produzido. |
+| ano\_lancamento | atributo | Atributo próprio da tabela Filme, de tipo YEAR, armazena o ano de lançamento do filme. |
+| custo\_total\_producao | atributo | Atributo próprio da tabela Filme, de tipo FLOAT, armazena o valor total da produção do filme. |
+| Estudio\_id\_estudio | atributo | FK da tabela Filme, referência a tabela Estudio a partir do valor do id de um determinado estúdio já instanciado. Não pode ser nulo. |
+| Estudio\_nome\_estudio | atributo | FK da tabela Filme, referência a tabela Estudio a partir do valor do nome único de um determinado estúdio já instanciado. Não pode ser nulo. |
+| Estudio\_DonoEstudio\_id\_dono\_estudo | atributo | FK da tabela Filme, referência a tabela DonoEstudio a partir do valor do id de um determinado dono de estúdio já instanciado. Não pode ser nulo. |
+| Ator | Tabela | Tabela modelo para dados relacionados à um ator. OBS.: Os campos de endereço ficam na tabela endereço. |
+| id\_ator | atributo | PK da tabela ator, tipo inteiro, identificador próprio para a tabela. |
+| cpf\_ator | atributo | PK da tabela ator, tipo inteiro, identifica ator pelo número de cpf. |
+| nome\_artistico\_ator | atributo | PK da tabela filme, tipo VARCHAR(45), identificador próprio para a tabela por conta do nome artístico ser único. |
+| seguro\_social\_ator | atributo | PK da tabela filme, tipo LONG, identifica ator pelo seu número único de seguro social. |
+| data\_nascimento\_ator | atributo | Atributo próprio da tabela Ator, de tipo DATE, armazena a data de nascimento do ator. |
+| Sexo\_sexo | atributo | FK da tabela Ator, referência a tabela Sexo a partir do valor booleano que define sexo. Não pode ser nulo. |
+| EstadoCivil\_id\_estado\_civil | atributo | FK da tabela Ator, referência a tabela EstadoCivil a partir do valor do identificador de um determinado estado civil já instanciado. Não pode ser nulo. |
+| Cidade\_id\_cidade | atributo | FK da tabela Ator, referência a tabela Cidade a partir do valor do identificador único de uma determinada cidade já instanciada. Chave que descreve a naturalidade do ator. Não pode ser nulo. |
+| Cidade\_UF\_id\_uf | atributo | FK da tabela Ator, referência a tabela UF a partir do valor do identificador único de uma determinadaunidade federativa já instanciada. Chave que descreve a naturalidade do ator. Não pode ser nulo. |
+| Cidade\_UF\_Pais\_id\_pais | atributo | FK da tabela Ator, referência a tabela País a partir do valor do identificador único de uma determinada cidade já instanciada. Chave que descreve a naturalidade do ator. Não pode ser nulo. |
 
 # Requisitos
 
