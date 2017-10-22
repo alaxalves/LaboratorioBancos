@@ -1,0 +1,23 @@
+123--------------------------------------------- estudio
+hmset estudio:01 nome_estudio "columbia pictures" dono_estudio "" data_fundacao "//" faturamento_anterior "" 
+
+
+hmset estudio:02 nome_estudio "universal studios" dono_estudio "" data_fundacao "//" faturamento_anterior ""
+hmset estudio:03 nome_estudio "21 century fox" dono_estudio "" data_fundacao "//" faturamento_anterior ""
+hmset estudio:04 nome_estudio "warner brothers" dono_estudio "" data_fundacao "//" faturamento_anterior ""
+
+123--------------------------------------------- filmes
+hmset filme:01 nome_filme "star wars: a new hope" meses_para_producao "22" copyright "829745897237" custo_total "$ 13.000.000" nome_diretor "george lucas" ano_lancamento "1977"
+hmset filme:02 nome_filme "star wars: the empire strikes back" meses_para_producao "25" copyright "12545661212121" custo_total "$ 18.000.000" nome_diretor "irvin kershner" ano_lancamento "1980"
+hmset filme:03 nome_filme "star wars: return of the jedi" meses_para_producao "32" copyright "212313514621156" custo_total "$ 32.500.000" nome_diretor "richard marquand" ano_lancamento "1983"
+hmset filme:04 nome_filme "E.T." meses_para_producao "27" copyright "27656561511222" custo_total "$ 10.500.000" nome_diretor "steven spielberg" ano_lancamento "1981"
+hmset filme:05 nome_filme "the invisible man" meses_para_producao "18" copyright "21320231545165" custo_total "$ nao encontrado" nome_diretor "james whale" ano_lancamento "1933"
+hmset filme:06 nome_filme "batman forever" meses_para_producao "15" copyright "651564561215664500" custo_total "$ 100.000.000" ano_lancamento "1995"
+
+
+123--------------------------------------------- ator
+hmset ator:01 nome_ator "william smith" nome_artistico "the fresh prince" seguro_social "" nacionalidade "" idade "" sexo ""
+hmset ator:02 nome_ator "ewan mcgreagor" nome_artistico "" seguro_social "" nacionalidade "" idade "" sexo ""
+hmset ator:03 nome_ator "scarlett johanson" nome_artistico "" seguro_social "" nacionalidade "" idade "" sexo ""
+hmset ator:04 nome_ator "" nome_artistico "" seguro_social "" nacionalidade "" idade "" sexo ""
+hmset ator:05 nome_ator "" nome_artistico "" seguro_social "" nacionalidade "" idade "" sexo ""

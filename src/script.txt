@@ -7,7 +7,7 @@ hmset estudio:03 nome_estudio "21 century fox" dono_estudio "" data_fundacao "//
 hmset estudio:04 nome_estudio "warner brothers" dono_estudio "" data_fundacao "//" faturamento_anterior ""
 
 123--------------------------------------------- filmes
-hmset filme:01 nome_filme "star wars: a new hope" meses_para_producao "22" copyright "829745897237" custo_total "$ 13.000.000" nome_diretor "george lucas" ano_lancamento "1977"
+hmset filme:01 nome_filme "star wars" meses_para_producao "22" copyright "829745897237" custo_total "$ 13.000.000" nome_diretor "george lucas" ano_lancamento "1977"
 hmset filme:02 nome_filme "star wars: the empire strikes back" meses_para_producao "25" copyright "12545661212121" custo_total "$ 18.000.000" nome_diretor "irvin kershner" ano_lancamento "1980"
 hmset filme:03 nome_filme "star wars: return of the jedi" meses_para_producao "32" copyright "212313514621156" custo_total "$ 32.500.000" nome_diretor "richard marquand" ano_lancamento "1983"
 hmset filme:04 nome_filme "E.T." meses_para_producao "27" copyright "27656561511222" custo_total "$ 10.500.000" nome_diretor "steven spielberg" ano_lancamento "1981"
@@ -16,4 +16,21 @@ hmset filme:06 nome_filme "batman forever" meses_para_producao "15" copyright "6
 
 
 123--------------------------------------------- ator
-hmset ator:01 
+hmset ator:01 nome_ator "william smith" nome_artistico "the fresh prince" seguro_social "72674812674612" nacionalidade "americano" idade "" sexo "masculino"
+hmset ator:02 nome_ator "ewan mcgreagor" nome_artistico "" seguro_social "72674812674612" nacionalidade "ingles" idade "" sexo "masculino"
+hmset ator:03 nome_ator "scarlett johanson" nome_artistico "" seguro_social "72674812674612" nacionalidade "americano" idade "" sexo "feminino"
+hmset ator:04 nome_ator "wagner moura" nome_artistico "" seguro_social "72674812674612" nacionalidade "brasileiro" idade "" sexo "masculino"
+
+123--------------------------------------------- tipos papeis
+hmset papel:01 descricao_papel "avô ou avó"
+hmset papel:02 descricao_papel "vilão ou vilã"
+hmset papel:03 descricao_papel "galã ou diva"
+hmset papel:04 descricao_papel "adolescente"
+hmset papel:05 descricao_papel "policial ou militar"
+
+123--------------------------------------------- personagem
+hmset personagem:01 nome_personagem "darth vader" nome_filme_personagem "star wars" nome_atuante ""
+hmset personagem:02 nome_personagem "capitao nascimento" nome_filme_personagem "tropa de elite" nome_atuante ""
+hmset personagem:03 nome_personagem "black widow" nome_filme_personagem "marvel's avengers" nome_atuante ""
+hmset personagem:04 nome_personagem "obi-wan kenobi" nome_filme_personagem "star wars: revenge of the sith" nome_atuante ""
+hmset personagem:05 nome_personagem "batman" nome_filme_personagem "batman forever" nome_atuante ""
