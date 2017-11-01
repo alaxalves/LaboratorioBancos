@@ -6,6 +6,8 @@ Sistema Cinematográfico - Hollywood
 
 # Problema Proposto
 
+### Criação de um banco de dados NOSql, usando o banco de dados *REDIS*, do seguinte mini-mundo: 
+
 Hollywood possui diversos estúdios cinematográficos, cada um caracterizado por um nome único, um dono, data de fundação, e o faturamento do ano anterior. Estes estúdiosproduzem filmes que possui um nome único, o número de meses que levou sendo feito, o ano de lançamento, o número do "copyright", e o custo total do filme. Em cada filme
 atuam atores, que possuem um nome artístico único, um número de seguro social (também único), uma nacionalidade, idade, sexo, e um conjunto de tipos de papéis para o
 qual seu tipo físico é aconselhável (ex: avó, mocinha jovem, galã com idades avançadas, adolescentes). Estes tipos de papéis não são pré-definidos, constituindo uma li ta preenchida a critério de cada ator. Em cada filme onde atua, um ator ganha um cachê, e desempenha um personagem que possui um nome. Estúdios podem existir mesmo que ainda não tiverem produzido um filme, mas só são considerados atores que já atuaram em pelo menos um filme. Todos os filmes possuem pelo menos um diretor.
@@ -16,7 +18,9 @@ Em termos de consultas e relatórios, o sistema deverá contemplar:
 - Relação dos cachês de um determinado ator;
 - Relação de todos os personagens de um ator
 
-# Dicionário de Dados
+# Implementação Relacional:
+
+## Dicionário de Dados
 
 ### Sumário
 1. [Introdução]()
@@ -145,7 +149,7 @@ Dicionário de Dados
 | Cidade\_UF\_id\_uf | atributo | FK da tabela Ator, referência a tabela UF a partir do valor do identificador único de uma determinadaunidade federativa já instanciada. Chave que descreve a naturalidade do ator. Não pode ser nulo. |
 | Cidade\_UF\_Pais\_id\_pais | atributo | FK da tabela Ator, referência a tabela País a partir do valor do identificador único de uma determinada cidade já instanciada. Chave que descreve a naturalidade do ator. Não pode ser nulo. |
 
-# Requisitos
+## Requisitos
 
 ### Sumário
 1. [Introdução]()
