@@ -1,11 +1,9 @@
-123--------------------------------------------- estudio
 
 hmset estudio:01 nome_estudio "columbia pictures" dono_estudio "" data_fundacao "//" faturamento_anterior "" lista_filmes Filmes:01
 hmset estudio:02 nome_estudio "universal studios" dono_estudio "" data_fundacao "//" faturamento_anterior "" lista_filmes Filmes:02
 hmset estudio:03 nome_estudio "20 Century Fox" dono_estudio "21st Century Fox" data_fundacao "//" faturamento_anterior "" lista_filmes Filmes:03
 hmset estudio:04 nome_estudio "warner brothers" dono_estudio "" data_fundacao "//" faturamento_anterior "" lista_filmes Filmes:04
 
-123--------------------------------------------- filmes
 
 hmset filme:01 nome_filme "Star Wars" meses_para_producao "22" copyright "829745897237" custo_total "$ 13.000.000" nome_diretor "george lucas" ano_lancamento "1977" lista_personagens Personagens:01
 hmset filme:02 nome_filme "Star Wars: the empire strikes back" meses_para_producao "25" copyright "12545661212121" custo_total "$ 18.000.000" nome_diretor "irvin kershner" ano_lancamento "1980" lista_personagens Personagens:02
@@ -14,7 +12,6 @@ hmset filme:04 nome_filme "E.T." meses_para_producao "27" copyright "27656561511
 hmset filme:05 nome_filme "The Invisible Man" meses_para_producao "18" copyright "21320231545165" custo_total "$ nao encontrado" nome_diretor "james whale" ano_lancamento "1933" lista_personagens Personagens:05
 hmset filme:06 nome_filme "Batman Forever" meses_para_producao "15" copyright "651564561215664500" custo_total "$ 100.000.000" ano_lancamento "1995" lista_personagens Personagens:06
 
-123--------------------------------------------- ator
 
 hmset ator:01 nome_ator "william smith" nome_artistico "the fresh prince" seguro_social "72674812674612" nacionalidade "americano" idade "" sexo "masculino" lista_personagens_feitos PersonagemFeito:01
 
@@ -28,7 +25,6 @@ hmset ator:05 nome_ator "Harrison Ford" nome_artistico "" seguro_social "7367488
 hmset ator:06 nome_ator "Carrie Fisher" nome_artistico "" seguro_social "73674814674612" nacionalidade "americana" idade "60" sexo "feminino" lista_personagens_feitos PersonagemFeito:06
 hmset ator:07 nome_ator "Mark Hamill" nome_artistico "" seguro_social "73674812674712" nacionalidade "americano" idade "66" sexo "masculino" lista_personagens_feitos PersonagemFeito:07
 
-123--------------------------------------------- tipos papeis
 
 hmset papel:01 descricao_papel "avô ou avó"
 hmset papel:02 descricao_papel "vilão ou vilã"
@@ -36,7 +32,6 @@ hmset papel:03 descricao_papel "galã ou diva"
 hmset papel:04 descricao_papel "adolescente"
 hmset papel:05 descricao_papel "policial ou militar"
 
-123--------------------------------------------- personagem
 
 hmset personagem:01 nome_personagem "Darth Vader" nome_filme_personagem "Star Wars" nome_atuante "" cache_atuante "100.000"
 hmset personagem:06 nome_personagem "Luke Skywalker" nome_filme_personagem "Star Wars" nome_atuante "" cache_atuante "100.000"
@@ -51,17 +46,14 @@ hmset personagem:04 nome_personagem "Obi-wan Kenobi" nome_filme_personagem "Star
 
 hmset personagem:05 nome_personagem "Batman" nome_filme_personagem "Batman Forever" nome_atuante "" cache_atuante
 
-123--------------------------------------------- lista_personagens
 
 sadd Personagens:01 personagem:01
 sadd Personagens:01 personagem:06
 sadd Personagens:01 personagem:07
 sadd Personagens:01 personagem:08
 
-123--------------------------------------------- lista_filmes
 
 sadd Filmes:03 filme:01
 
-123--------------------------------------------- personagem_feito
 
 sadd PersonagemFeito:05 personagem:08
