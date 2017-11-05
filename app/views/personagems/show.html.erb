@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @personagem.nome %>
+</p>
+
+<p>
+  <strong>Nome filme:</strong>
+  <%= @personagem.nome_filme %>
+</p>
+
+<p>
+  <strong>Nome ator:</strong>
+  <%= @personagem.nome_ator %>
+</p>
+
+<p>
+  <strong>Cache ator:</strong>
+  <%= @personagem.cache_ator %>
+</p>
+
+<%= link_to 'Edit', edit_personagem_path(@personagem) %> |
+<%= link_to 'Back', personagems_path %>

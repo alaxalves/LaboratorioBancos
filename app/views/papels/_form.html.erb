@@ -1,0 +1,22 @@
+<%= form_with(model: papel, local: true) do |form| %>
+  <% if papel.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(papel.errors.count, "error") %> prohibited this papel from being saved:</h2>
+
+      <ul>
+      <% papel.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :descricao %>
+    <%= form.text_area :descricao, id: :papel_descricao %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

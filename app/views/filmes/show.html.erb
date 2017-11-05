@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @filme.nome %>
+</p>
+
+<p>
+  <strong>Meses producao:</strong>
+  <%= @filme.meses_producao %>
+</p>
+
+<p>
+  <strong>Copyright:</strong>
+  <%= @filme.copyright %>
+</p>
+
+<p>
+  <strong>Diretor:</strong>
+  <%= @filme.diretor %>
+</p>
+
+<p>
+  <strong>Custo total:</strong>
+  <%= @filme.custo_total %>
+</p>
+
+<p>
+  <strong>Ano lancamento:</strong>
+  <%= @filme.ano_lancamento %>
+</p>
+
+<%= link_to 'Edit', edit_filme_path(@filme) %> |
+<%= link_to 'Back', filmes_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  meses_producao: 1
+  copyright: MyString
+  diretor: MyString
+  custo_total: 1.5
+  ano_lancamento: 1
+
+two:
+  nome: MyString
+  meses_producao: 1
+  copyright: MyString
+  diretor: MyString
+  custo_total: 1.5
+  ano_lancamento: 1

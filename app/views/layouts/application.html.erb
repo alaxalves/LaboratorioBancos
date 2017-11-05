@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hollywood</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <div id="menu">
+    <%= link_to "ESTUDIOS", estudios_path%>
+    <%= link_to "FILMES", filmes_path%>
+    <%= link_to "ATORES", ators_path%>
+    <%= link_to "PERSONAGENS", personagems_path%>
+    <%= link_to "PAPEIS", papels_path%>
+  </div>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

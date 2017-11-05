@@ -1,0 +1,42 @@
+<%= form_with(model: ator, local: true) do |form| %>
+  <% if ator.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ator.errors.count, "error") %> prohibited this ator from being saved:</h2>
+
+      <ul>
+      <% ator.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, id: :ator_nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nome_artistico %>
+    <%= form.text_field :nome_artistico, id: :ator_nome_artistico %>
+  </div>
+
+  <div class="field">
+    <%= form.label :seguro_social %>
+    <%= form.number_field :seguro_social, id: :ator_seguro_social %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nacionalidade %>
+    <%= form.text_field :nacionalidade, id: :ator_nacionalidade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :idade %>
+    <%= form.text_field :idade, id: :ator_idade %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

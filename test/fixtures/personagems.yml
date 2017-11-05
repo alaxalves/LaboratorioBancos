@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  nome_filme: MyString
+  nome_ator: MyString
+  cache_ator: 1.5
+
+two:
+  nome: MyString
+  nome_filme: MyString
+  nome_ator: MyString
+  cache_ator: 1.5
