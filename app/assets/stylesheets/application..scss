@@ -14,5 +14,26 @@
  *= require_self
  */
 
- @import "bootstrap-sprockets"
- @import "bootstrap"
+@import "bootstrap-sprockets";
+@import "bootswatch/sandstone/variables";
+@import "bootstrap";
+
+@import "bootswatch/sandstone/bootswatch";
+@import "base";
+
+// theme colors
+$primaryColor:   #000000;
+$secondColor:    #000000;
+$thirdColor:     #000000;
+$fourthColor:    #000000;
+$highlightColor: #000000;
+
+// button colors
+$confirm_btn_color: #000000;
+$cancel_btn_color:  #000000;
+$warning_btn_color: #000000;
+
+// text colors
+$text_color:          #000000;
+$bold_text_color:     #000000;
+$text_highlight_color:#000000;
