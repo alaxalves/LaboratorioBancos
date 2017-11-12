@@ -2,7 +2,6 @@
   <% if estudio.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(estudio.errors.count, "error") %> prohibited this estudio from being saved:</h2>
-
       <ul>
       <% estudio.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -10,28 +9,25 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :nome %>
-    <%= form.text_field :nome, id: :estudio_nome %>
-  </div>
-
-  <div class="field">
-    <%= form.label :nome_dono %>
-    <%= form.text_field :nome_dono, id: :estudio_nome_dono %>
-  </div>
-
-  <div class="field">
-    <%= form.label :data_fundacao %>
-    <%= form.date_select :data_fundacao, id: :estudio_data_fundacao %>
-  </div>
-
-  <div class="field">
-    <%= form.label :faturamento %>
-    <%= form.text_field :faturamento, id: :estudio_faturamento %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-box">
+    <div class="form-group">
+      <%= form.label :nome %>
+      <%= form.text_field :nome, id: :estudio_nome, class:'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= form.label :nome_dono %>
+      <%= form.text_field :nome_dono, id: :estudio_nome_dono, class:'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= form.label :data_fundacao %>
+      <%= form.date_select :data_fundacao, id: :estudio_data_fundacao, class:'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= form.label :faturamento %>
+      <%= form.text_field :faturamento, id: :estudio_faturamento, class:'form-control' %>
+    </div>
+    <div class="actions">
+      <%= form.submit class:'btn btn-success' %>
+    </div>
   </div>
 <% end %>

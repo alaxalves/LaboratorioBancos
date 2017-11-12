@@ -2,7 +2,6 @@
   <% if personagem.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(personagem.errors.count, "error") %> prohibited this personagem from being saved:</h2>
-
       <ul>
       <% personagem.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -10,28 +9,25 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :nome %>
-    <%= form.text_field :nome, id: :personagem_nome %>
-  </div>
-
-  <div class="field">
-    <%= form.label :nome_filme %>
-    <%= form.text_field :nome_filme, id: :personagem_nome_filme %>
-  </div>
-
-  <div class="field">
-    <%= form.label :nome_ator %>
-    <%= form.text_field :nome_ator, id: :personagem_nome_ator %>
-  </div>
-
-  <div class="field">
-    <%= form.label :cache_ator %>
-    <%= form.text_field :cache_ator, id: :personagem_cache_ator %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-box">
+    <div class="form-group">
+      <%= form.label :nome %>
+      <%= form.text_field :nome, id: :personagem_nome, class:'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= form.label :nome_filme %>
+      <%= form.text_field :nome_filme, id: :personagem_nome_filme, class:'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= form.label :nome_ator %>
+      <%= form.text_field :nome_ator, id: :personagem_nome_ator, class:'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= form.label :cache_ator %>
+      <%= form.text_field :cache_ator, id: :personagem_cache_ator, class:'form-control' %>
+    </div>
+    <div class="actions">
+      <%= form.submit class:'btn btn-success' %>
+    </div>
   </div>
 <% end %>
