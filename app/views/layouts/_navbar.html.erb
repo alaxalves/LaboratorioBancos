@@ -1,7 +1,30 @@
-<div id="menu">
-  <%= link_to "ESTUDIOS", estudios_path%>
-  <%= link_to "FILMES", filmes_path%>
-  <%= link_to "ATORES", ators_path%>
-  <%= link_to "PERSONAGENS", personagems_path%>
-  <%= link_to "PAPEIS", papels_path%>
-</div>
+<nav class="navbar navbar-custom navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" name="menu" class="navbar-toggle collapse"
+          data-toggle="collapse" data-target="#menu-list" aria-expanded="false">
+        <span class="glyphicon glyphicon-menu"></span>
+      </button>
+      <%= link_to 'REDIS on ma Rails', root_path, class:'navbar-brand' %>
+    </div>
+    <div class="collapse navbar-collapse" id="#menu-list">
+      <ul class="nav navbar-nav">
+        <li>
+          <%= link_to "ESTUDIOS", estudios_path, class:"navbar-link"%>
+        </li>
+        <li>
+          <%= link_to "FILMES", filmes_path, class:"navbar-link"%>
+        </li>
+        <li>
+          <%= link_to "ATORES", ators_path, class:"navbar-link"%>
+        </li>
+        <li>
+          <%= link_to "PAPEIS", papels_path, class:"navbar-link"%>
+        </li>
+        <li>
+          <%= link_to "PERSONAGENS", personagems_path, class:"navbar-link"%>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

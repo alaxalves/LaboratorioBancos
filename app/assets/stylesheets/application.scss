@@ -1,0 +1,142 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require font-awesome
+ *= require_tree .
+ *= require_self
+ */
+
+@import "font-awesome";
+
+@import "bootstrap-sprockets";
+@import "bootswatch/sandstone/variables";
+@import "bootstrap";
+
+// @import "bootswatch/sandstone/bootswatch";
+
+// theme colors
+$primaryColor:   #020202;
+$secondColor:    #222222;
+$thirdColor:     #666666;
+$fourthColor:    #000000;
+$neutralColor:   #e9e7e7;
+$highlightColor: #c7b726;
+
+// button colors
+$confirm_btn_color: #29e97f;
+$cancel_btn_color:  #e64848;
+$warning_btn_color: #ffcc00;
+
+// text colors
+$lightText_color:     #cfcfcf;
+$darkText_color:      #292929;
+$specialText_color:   #c94a00;
+
+.navbar {
+  background-color: $primaryColor;
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar-link {
+  font-size: .9em;
+  border-bottom: 1px solid transparent;
+  transition: all .3s linear;
+}
+
+.navbar-link:hover {
+  color: $specialText_color;
+  background-color: transparent !important;
+  border-bottom: 1px solid $specialText_color;
+  transition: all .3s linear;
+}
+
+.fa {
+  color: $specialText_color;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+  color: $darkText_color;
+}
+
+.subline {
+  border-color: $lightText_color;
+  width: 38%;
+}
+
+.page-header {
+  background: url('/images/theater-background.jpg') no-repeat center center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: $lightText_color;
+}
+
+.page-header .container-fluid {
+  padding: 0;
+}
+
+.text-header {
+  background-color: rgba(0, 0, 0, .7);
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+#content-ssh {
+  background-color: $neutralColor;
+  padding: 5em 0;
+}
+
+.btn-redirect {
+  background-color: transparent;
+  border: 1.5px $lightText_color solid;
+  color: $lightText_color;
+  width: 8em;
+}
+
+.btn-redirect a {
+  color: $lightText_color;
+}
+
+.btn-redirect:hover {
+  background-color: $specialText_color;
+}
+
+#section-header {
+  margin-bottom: 3em;
+}
+
+.text-area {
+  background-color: white;
+  box-shadow: 0 0 20px #ddd;
+  padding: 2.5em 2.5em;
+  border-radius: 3px;
+  height: 25em;
+}
+
+
+.text-area .p-txt {
+  line-height: 1.15;
+}
+
+.header-btn {
+ text-align: center;
+}
+
+footer {
+  padding: 3em;
+  background-color: $secondColor;
+}
