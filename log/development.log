@@ -3130,3 +3130,791 @@ Processing by PersonagemsController#create as HTML
 Completed 200 OK in 99ms (Views: 96.2ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-12 21:16:24 -0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (19.7ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 1663ms (Views: 1641.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:16:38 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.3ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (34.0ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 175ms (Views: 129.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:17:57 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.3ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 101ms (Views: 98.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:17:59 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.2ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 109ms (Views: 107.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ators" for 127.0.0.1 at 2017-11-12 21:18:04 -0200
+Processing by AtorsController#index as HTML
+  Rendering ators/index.html.erb within layouts/application
+  [1m[36mAtor Load (0.3ms)[0m  [1m[34mSELECT "ators".* FROM "ators"[0m
+  Rendered ators/index.html.erb within layouts/application (27.6ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 148ms (Views: 136.2ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/ators/2" for 127.0.0.1 at 2017-11-12 21:18:48 -0200
+Processing by AtorsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z1U5DMGxr06evWGNus4GY7cI9FFfZXExYue/l7Wiv9DE1De9cokN5YaN5rjbw4/G1lXC3SrhEJjslfqBTBZqpg==", "id"=>"2"}
+  [1m[36mAtor Load (0.3ms)[0m  [1m[34mSELECT  "ators".* FROM "ators" WHERE "ators"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (13.7ms)[0m  [1m[31mDELETE FROM "ators" WHERE "ators"."id" = ?[0m  [["id", 2]]
+  [1m[35m (122.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ators
+Completed 302 Found in 156ms (ActiveRecord: 136.4ms)
+
+
+Started GET "/ators" for 127.0.0.1 at 2017-11-12 21:18:49 -0200
+Processing by AtorsController#index as HTML
+  Rendering ators/index.html.erb within layouts/application
+  [1m[36mAtor Load (0.4ms)[0m  [1m[34mSELECT "ators".* FROM "ators"[0m
+  Rendered ators/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navbar.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 91ms (Views: 89.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ators" for 127.0.0.1 at 2017-11-12 21:21:47 -0200
+Processing by AtorsController#index as HTML
+  Rendering ators/index.html.erb within layouts/application
+  [1m[36mAtor Load (0.3ms)[0m  [1m[34mSELECT "ators".* FROM "ators"[0m
+  Rendered ators/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 132ms (Views: 130.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ators" for 127.0.0.1 at 2017-11-12 21:22:17 -0200
+Processing by AtorsController#index as HTML
+  Rendering ators/index.html.erb within layouts/application
+  [1m[36mAtor Load (0.2ms)[0m  [1m[34mSELECT "ators".* FROM "ators"[0m
+  Rendered ators/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 88ms (Views: 86.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ators" for 127.0.0.1 at 2017-11-12 21:22:56 -0200
+Processing by AtorsController#index as HTML
+  Rendering ators/index.html.erb within layouts/application
+  [1m[36mAtor Load (0.2ms)[0m  [1m[34mSELECT "ators".* FROM "ators"[0m
+  Rendered ators/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 75ms (Views: 73.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ators" for 127.0.0.1 at 2017-11-12 21:34:50 -0200
+Processing by AtorsController#index as HTML
+  Rendering ators/index.html.erb within layouts/application
+  [1m[36mAtor Load (0.2ms)[0m  [1m[34mSELECT "ators".* FROM "ators"[0m
+  Rendered ators/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 95ms (Views: 93.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/filmes" for 127.0.0.1 at 2017-11-12 21:34:53 -0200
+Processing by FilmesController#index as HTML
+  Rendering filmes/index.html.erb within layouts/application
+  [1m[36mFilme Load (0.3ms)[0m  [1m[34mSELECT "filmes".* FROM "filmes"[0m
+  Rendered filmes/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navbar.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 130ms (Views: 93.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/filmes" for 127.0.0.1 at 2017-11-12 21:35:09 -0200
+Processing by FilmesController#index as HTML
+  Rendering filmes/index.html.erb within layouts/application
+  [1m[36mFilme Load (0.2ms)[0m  [1m[34mSELECT "filmes".* FROM "filmes"[0m
+  Rendered filmes/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 78ms (Views: 76.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ators" for 127.0.0.1 at 2017-11-12 21:35:13 -0200
+Processing by AtorsController#index as HTML
+  Rendering ators/index.html.erb within layouts/application
+  [1m[36mAtor Load (0.3ms)[0m  [1m[34mSELECT "ators".* FROM "ators"[0m
+  Rendered ators/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_navbar.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 112ms (Views: 109.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/papels" for 127.0.0.1 at 2017-11-12 21:35:14 -0200
+Processing by PapelsController#index as HTML
+  Rendering papels/index.html.erb within layouts/application
+  [1m[36mPapel Load (0.2ms)[0m  [1m[34mSELECT "papels".* FROM "papels"[0m
+  Rendered papels/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 113ms (Views: 108.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/personagems" for 127.0.0.1 at 2017-11-12 21:35:16 -0200
+Processing by PersonagemsController#index as HTML
+  Rendering personagems/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT "personagems".* FROM "personagems"[0m
+  Rendered personagems/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 150ms (Views: 142.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/personagems" for 127.0.0.1 at 2017-11-12 21:35:36 -0200
+Processing by PersonagemsController#index as HTML
+  Rendering personagems/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT "personagems".* FROM "personagems"[0m
+  Rendered personagems/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 109ms (Views: 107.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagems" for 127.0.0.1 at 2017-11-12 21:35:38 -0200
+Processing by PersonagemsController#index as HTML
+  Rendering personagems/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT "personagems".* FROM "personagems"[0m
+  Rendered personagems/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagems" for 127.0.0.1 at 2017-11-12 21:35:38 -0200
+Processing by PersonagemsController#index as HTML
+  Rendering personagems/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (1.0ms)[0m  [1m[34mSELECT "personagems".* FROM "personagems"[0m
+  Rendered personagems/index.html.erb within layouts/application (6.2ms)
+Started GET "/personagems" for 127.0.0.1 at 2017-11-12 21:35:38 -0200
+Processing by PersonagemsController#index as HTML
+  Rendering personagems/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT "personagems".* FROM "personagems"[0m
+  Rendered personagems/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 224ms (Views: 220.2ms | ActiveRecord: 1.0ms)
+
+
+  Rendered layouts/_navbar.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 115ms (Views: 112.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:35:40 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.4ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 145ms (Views: 142.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/estudios/2" for 127.0.0.1 at 2017-11-12 21:35:45 -0200
+Processing by EstudiosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rRm1qTjU/uqURoFHNFXCigq12ZE+9sE6BgLldRytkAsOmLsYi+xcQYx2BnJVWEsva+jvHUtyoJOIcKBj5RlFfQ==", "id"=>"2"}
+  [1m[36mEstudio Load (0.4ms)[0m  [1m[34mSELECT  "estudios".* FROM "estudios" WHERE "estudios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  [1m[31mDELETE FROM "estudios" WHERE "estudios"."id" = ?[0m  [["id", 2]]
+  [1m[35m (139.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/estudios
+Completed 302 Found in 150ms (ActiveRecord: 143.1ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:35:45 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.4ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navbar.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 115ms (Views: 113.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/filmes" for 127.0.0.1 at 2017-11-12 21:35:47 -0200
+Processing by FilmesController#index as HTML
+  Rendering filmes/index.html.erb within layouts/application
+  [1m[36mFilme Load (0.3ms)[0m  [1m[34mSELECT "filmes".* FROM "filmes"[0m
+  Rendered filmes/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 106ms (Views: 104.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/filmes" for 127.0.0.1 at 2017-11-12 21:36:24 -0200
+Processing by FilmesController#index as HTML
+  Rendering filmes/index.html.erb within layouts/application
+  [1m[36mFilme Load (0.2ms)[0m  [1m[34mSELECT "filmes".* FROM "filmes"[0m
+  Rendered filmes/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 83ms (Views: 81.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/filmes" for 127.0.0.1 at 2017-11-12 21:36:55 -0200
+Processing by FilmesController#index as HTML
+  Rendering filmes/index.html.erb within layouts/application
+  [1m[36mFilme Load (0.4ms)[0m  [1m[34mSELECT "filmes".* FROM "filmes"[0m
+  Rendered filmes/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 91ms (Views: 88.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:36:56 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.3ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 114ms (Views: 111.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/filmes" for 127.0.0.1 at 2017-11-12 21:36:58 -0200
+Processing by FilmesController#index as HTML
+  Rendering filmes/index.html.erb within layouts/application
+  [1m[36mFilme Load (0.4ms)[0m  [1m[34mSELECT "filmes".* FROM "filmes"[0m
+  Rendered filmes/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_navbar.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 147ms (Views: 144.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ators" for 127.0.0.1 at 2017-11-12 21:36:58 -0200
+Processing by AtorsController#index as HTML
+  Rendering ators/index.html.erb within layouts/application
+  [1m[36mAtor Load (0.3ms)[0m  [1m[34mSELECT "ators".* FROM "ators"[0m
+  Rendered ators/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 116ms (Views: 114.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/papels" for 127.0.0.1 at 2017-11-12 21:37:00 -0200
+Processing by PapelsController#index as HTML
+  Rendering papels/index.html.erb within layouts/application
+  [1m[36mPapel Load (0.2ms)[0m  [1m[34mSELECT "papels".* FROM "papels"[0m
+  Rendered papels/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 109ms (Views: 106.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagems" for 127.0.0.1 at 2017-11-12 21:37:02 -0200
+Processing by PersonagemsController#index as HTML
+  Rendering personagems/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.4ms)[0m  [1m[34mSELECT "personagems".* FROM "personagems"[0m
+  Rendered personagems/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 99ms (Views: 97.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ators" for 127.0.0.1 at 2017-11-12 21:37:03 -0200
+Processing by AtorsController#index as HTML
+  Rendering ators/index.html.erb within layouts/application
+  [1m[36mAtor Load (0.4ms)[0m  [1m[34mSELECT "ators".* FROM "ators"[0m
+  Rendered ators/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 102ms (Views: 99.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/papels" for 127.0.0.1 at 2017-11-12 21:37:05 -0200
+Processing by PapelsController#index as HTML
+  Rendering papels/index.html.erb within layouts/application
+  [1m[36mPapel Load (0.3ms)[0m  [1m[34mSELECT "papels".* FROM "papels"[0m
+  Rendered papels/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 136ms (Views: 133.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:37:07 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.4ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 148ms (Views: 145.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ators" for 127.0.0.1 at 2017-11-12 21:37:13 -0200
+Processing by AtorsController#index as HTML
+  Rendering ators/index.html.erb within layouts/application
+  [1m[36mAtor Load (0.2ms)[0m  [1m[34mSELECT "ators".* FROM "ators"[0m
+  Rendered ators/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 117ms (Views: 115.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/filmes" for 127.0.0.1 at 2017-11-12 21:37:14 -0200
+Processing by FilmesController#index as HTML
+  Rendering filmes/index.html.erb within layouts/application
+  [1m[36mFilme Load (0.3ms)[0m  [1m[34mSELECT "filmes".* FROM "filmes"[0m
+  Rendered filmes/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 104ms (Views: 102.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/papels" for 127.0.0.1 at 2017-11-12 21:37:16 -0200
+Processing by PapelsController#index as HTML
+  Rendering papels/index.html.erb within layouts/application
+  [1m[36mPapel Load (0.4ms)[0m  [1m[34mSELECT "papels".* FROM "papels"[0m
+  Rendered papels/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 118ms (Views: 116.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/personagems" for 127.0.0.1 at 2017-11-12 21:37:17 -0200
+Processing by PersonagemsController#index as HTML
+  Rendering personagems/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT "personagems".* FROM "personagems"[0m
+  Rendered personagems/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 107ms (Views: 103.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-12 21:37:19 -0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 82ms (Views: 80.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:39:37 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.2ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navbar.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 5907ms (Views: 5905.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:39:43 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.3ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navbar.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 229ms (Views: 226.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:40:22 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.3ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 81ms (Views: 78.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:41:10 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.2ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navbar.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 4089ms (Views: 4087.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:41:23 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.3ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 83ms (Views: 80.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:41:27 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.2ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:42:04 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.2ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 3768ms (Views: 3766.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:42:47 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.3ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 3892ms (Views: 3890.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:43:00 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.3ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 3778ms (Views: 3777.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:43:28 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.2ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 127ms (Views: 125.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:44:43 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.3ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 83ms (Views: 81.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:45:04 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.3ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 95ms (Views: 93.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:45:41 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.3ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 3797ms (Views: 3793.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:46:04 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.2ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 3757ms (Views: 3755.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:46:23 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.2ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 3864ms (Views: 3862.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:46:41 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.3ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navbar.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 85ms (Views: 83.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:48:17 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.2ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 3843ms (Views: 3841.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:48:43 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.3ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 3767ms (Views: 3765.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:49:30 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.4ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navbar.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 4562ms (Views: 4560.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:49:54 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.3ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 96ms (Views: 94.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/filmes" for 127.0.0.1 at 2017-11-12 21:49:55 -0200
+Processing by FilmesController#index as HTML
+  Rendering filmes/index.html.erb within layouts/application
+  [1m[36mFilme Load (0.3ms)[0m  [1m[34mSELECT "filmes".* FROM "filmes"[0m
+  Rendered filmes/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 91ms (Views: 89.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ators" for 127.0.0.1 at 2017-11-12 21:49:56 -0200
+Processing by AtorsController#index as HTML
+  Rendering ators/index.html.erb within layouts/application
+  [1m[36mAtor Load (0.4ms)[0m  [1m[34mSELECT "ators".* FROM "ators"[0m
+  Rendered ators/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navbar.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 115ms (Views: 111.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/papels" for 127.0.0.1 at 2017-11-12 21:49:57 -0200
+Processing by PapelsController#index as HTML
+  Rendering papels/index.html.erb within layouts/application
+  [1m[36mPapel Load (0.2ms)[0m  [1m[34mSELECT "papels".* FROM "papels"[0m
+  Rendered papels/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 102ms (Views: 101.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagems" for 127.0.0.1 at 2017-11-12 21:49:59 -0200
+Processing by PersonagemsController#index as HTML
+  Rendering personagems/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT "personagems".* FROM "personagems"[0m
+  Rendered personagems/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navbar.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 98ms (Views: 95.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/personagems" for 127.0.0.1 at 2017-11-12 21:50:18 -0200
+Processing by PersonagemsController#index as HTML
+  Rendering personagems/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT "personagems".* FROM "personagems"[0m
+  Rendered personagems/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 71ms (Views: 68.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagems" for 127.0.0.1 at 2017-11-12 21:50:35 -0200
+Processing by PersonagemsController#index as HTML
+  Rendering personagems/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT "personagems".* FROM "personagems"[0m
+  Rendered personagems/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 75ms (Views: 73.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/papels" for 127.0.0.1 at 2017-11-12 21:50:37 -0200
+Processing by PapelsController#index as HTML
+  Rendering papels/index.html.erb within layouts/application
+  [1m[36mPapel Load (0.2ms)[0m  [1m[34mSELECT "papels".* FROM "papels"[0m
+  Rendered papels/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navbar.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 98ms (Views: 96.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ators" for 127.0.0.1 at 2017-11-12 21:50:39 -0200
+Processing by AtorsController#index as HTML
+  Rendering ators/index.html.erb within layouts/application
+  [1m[36mAtor Load (0.5ms)[0m  [1m[34mSELECT "ators".* FROM "ators"[0m
+  Rendered ators/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 109ms (Views: 107.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/ators" for 127.0.0.1 at 2017-11-12 21:51:02 -0200
+Processing by AtorsController#index as HTML
+  Rendering ators/index.html.erb within layouts/application
+  [1m[36mAtor Load (0.3ms)[0m  [1m[34mSELECT "ators".* FROM "ators"[0m
+  Rendered ators/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 86ms (Views: 84.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ators" for 127.0.0.1 at 2017-11-12 21:53:53 -0200
+Processing by AtorsController#index as HTML
+  Rendering ators/index.html.erb within layouts/application
+  [1m[36mAtor Load (0.4ms)[0m  [1m[34mSELECT "ators".* FROM "ators"[0m
+  Rendered ators/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 113ms (Views: 111.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-12 21:53:57 -0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 108ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-12 21:54:35 -0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 124ms (Views: 122.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/filmes" for 127.0.0.1 at 2017-11-12 21:55:01 -0200
+Processing by FilmesController#index as HTML
+  Rendering filmes/index.html.erb within layouts/application
+  [1m[36mFilme Load (0.3ms)[0m  [1m[34mSELECT "filmes".* FROM "filmes"[0m
+  Rendered filmes/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 80ms (Views: 77.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/filmes" for 127.0.0.1 at 2017-11-12 21:55:07 -0200
+Processing by FilmesController#index as HTML
+  Rendering filmes/index.html.erb within layouts/application
+  [1m[36mFilme Load (0.2ms)[0m  [1m[34mSELECT "filmes".* FROM "filmes"[0m
+  Rendered filmes/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 92ms (Views: 89.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/estudios" for 127.0.0.1 at 2017-11-12 21:55:09 -0200
+Processing by EstudiosController#index as HTML
+  Rendering estudios/index.html.erb within layouts/application
+  [1m[36mEstudio Load (0.4ms)[0m  [1m[34mSELECT "estudios".* FROM "estudios"[0m
+  Rendered estudios/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 107ms (Views: 103.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/filmes" for 127.0.0.1 at 2017-11-12 21:55:10 -0200
+Processing by FilmesController#index as HTML
+  Rendering filmes/index.html.erb within layouts/application
+  [1m[36mFilme Load (0.3ms)[0m  [1m[34mSELECT "filmes".* FROM "filmes"[0m
+  Rendered filmes/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 103ms (Views: 100.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ators" for 127.0.0.1 at 2017-11-12 21:55:11 -0200
+Processing by AtorsController#index as HTML
+  Rendering ators/index.html.erb within layouts/application
+  [1m[36mAtor Load (0.2ms)[0m  [1m[34mSELECT "ators".* FROM "ators"[0m
+  Rendered ators/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 120ms (Views: 117.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/papels" for 127.0.0.1 at 2017-11-12 21:55:13 -0200
+Processing by PapelsController#index as HTML
+  Rendering papels/index.html.erb within layouts/application
+  [1m[36mPapel Load (0.2ms)[0m  [1m[34mSELECT "papels".* FROM "papels"[0m
+  Rendered papels/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 114ms (Views: 111.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagems" for 127.0.0.1 at 2017-11-12 21:55:14 -0200
+Processing by PersonagemsController#index as HTML
+  Rendering personagems/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT "personagems".* FROM "personagems"[0m
+  Rendered personagems/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navbar.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 99ms (Views: 97.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-12 21:55:16 -0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navbar.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 92ms (Views: 89.8ms | ActiveRecord: 0.0ms)
+
+

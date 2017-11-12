@@ -1,37 +1,36 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Filmes</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Meses producao</th>
-      <th>Copyright</th>
-      <th>Diretor</th>
-      <th>Custo total</th>
-      <th>Ano lancamento</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @filmes.each do |filme| %>
-      <tr>
-        <td><%= filme.nome %></td>
-        <td><%= filme.meses_producao %></td>
-        <td><%= filme.copyright %></td>
-        <td><%= filme.diretor %></td>
-        <td><%= filme.custo_total %></td>
-        <td><%= filme.ano_lancamento %></td>
-        <td><%= link_to 'Show', filme %></td>
-        <td><%= link_to 'Edit', edit_filme_path(filme) %></td>
-        <td><%= link_to 'Destroy', filme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Filme', new_filme_path %>
+<div class="container-fluid table-div">
+  <h1>Filmes</h1>
+  <div class="table-responsive">
+    <table class="table table-hover table-bordered table-striped text-center">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Meses producao</th>
+          <th>Copyright</th>
+          <th>Diretor</th>
+          <th>Custo total</th>
+          <th>Ano lancamento</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @filmes.each do |filme| %>
+          <tr>
+            <td><%= filme.nome %></td>
+            <td><%= filme.meses_producao %></td>
+            <td><%= filme.copyright %></td>
+            <td><%= filme.diretor %></td>
+            <td><%= filme.custo_total %></td>
+            <td><%= filme.ano_lancamento %></td>
+            <td><%= link_to 'Show', filme %></td>
+            <td><%= link_to 'Edit', edit_filme_path(filme) %></td>
+            <td><%= link_to 'Destroy', filme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <%= link_to '<span class="fa fa-plus"></span> New Filme'.html_safe, new_filme_path, class:'btn btn-info' %>
+</div>

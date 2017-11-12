@@ -67,6 +67,10 @@ $specialText_color:   #e64848;
   color: $specialText_color;
 }
 
+.fa-plus {
+  color: $lightText_color;
+}
+
 .fa-quote-left,
 .fa-quote-right {
   color: $darkText_color;
@@ -147,5 +151,15 @@ $specialText_color:   #e64848;
 
 footer {
   padding: 3em;
+  padding-bottom: 8em;
   background-color: $secondColor;
+}
+
+#notice {
+  background-color: $neutralColor;
+}
+
+.table-div {
+  padding: 6em 3em;
+  background-color: $neutralColor;
 }
