@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  redis:
+    container_name: redis-hollywood
+    build: .
+#    image: redis:4.0.2
+    ports:
+      - 6379:6379
+    volumes:
+      - ./src/@scripts-lua:/redis
